@@ -1,16 +1,19 @@
 import * as Categories from './productCategory'
+//
 
+
+//all products must have these things
 export interface Product {
 	name: string
 	price: number
 	category?: Categories.ProductCategory  //this is optional
 }
-
+//default product, intital state of product acts as placeholder
 export class Initial implements Product{
 	name = "Please select a product"
 	price = 0
 }
-
+//class implements product fills out fields
 export class CocaCola implements Product{
   name = "Coca-Cola"
   price = 2.30
