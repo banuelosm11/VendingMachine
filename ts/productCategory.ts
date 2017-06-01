@@ -1,4 +1,4 @@
-abstract class ProductCategory {
+abstract class ProductCategory {//
 	protected imgPath = "img/";  
     
 	name: string;
@@ -8,7 +8,7 @@ abstract class ProductCategory {
 class SodaCategory extends ProductCategory {
 	name = "Soda"
 	getImageUrl () {
-    	return this.imgPath + "SodaCan.png";
+    	return this.imgPath + "SodaCan.png";//returning img/SodaCan.png
 	}
 }
 
